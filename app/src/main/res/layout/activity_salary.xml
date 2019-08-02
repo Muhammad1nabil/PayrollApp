@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammad.elitepayrollapp.SalaryActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/Salary_1Day_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="4dp"
+        android:text="1 Day"
+        app:layout_constraintBottom_toTopOf="@+id/Salary_Note_EditText"
+        app:layout_constraintEnd_toEndOf="@+id/Salary_viewData_Button"
+        app:layout_constraintStart_toEndOf="@+id/Salary_Add_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Salary_Amount_EditText" />
+
+    <Button
+        android:id="@+id/Salary_14Day_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="18dp"
+        android:text="1/4 Day"
+        app:layout_constraintBottom_toTopOf="@+id/Salary_12Day_Button"
+        app:layout_constraintEnd_toEndOf="@+id/Salary_12Day_Button"
+        app:layout_constraintStart_toStartOf="@+id/Salary_12Day_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Salary_viewData_Button" />
+
+    <TextView
+        android:id="@+id/Salary_name_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="Balance: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Salary_name_TextView" />
+
+    <EditText
+        android:id="@+id/Salary_Amount_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/Salary_Minus_Button"
+        app:layout_constraintEnd_toStartOf="@+id/Salary_Add_Button"
+        app:layout_constraintStart_toStartOf="@+id/Salary_Add_Button" />
+
+    <TextView
+        android:id="@+id/Salary_Balance_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="42dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/Salary_Amount_EditText"
+        app:layout_constraintStart_toEndOf="@+id/Balance" />
+
+    <Button
+        android:id="@+id/Salary_Minus_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:background="#FF0000"
+        android:text="Minus"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Salary_Add_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="#00BB00"
+        android:text="Add"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/Salary_Minus_Button"
+        app:layout_constraintTop_toBottomOf="@+id/Salary_Amount_EditText" />
+
+    <Button
+        android:id="@+id/Salary_12Day_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:text="1/2 Day"
+        app:layout_constraintBottom_toTopOf="@+id/Salary_1Day_Button"
+        app:layout_constraintEnd_toEndOf="@+id/Salary_1Day_Button"
+        app:layout_constraintStart_toStartOf="@+id/Salary_1Day_Button"
+        app:layout_constraintTop_toTopOf="@+id/Salary_Amount_EditText" />
+
+    <EditText
+        android:id="@+id/Salary_Note_EditText"
+        android:layout_width="334dp"
+        android:layout_height="234dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Salary_Minus_Button"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/Salary_viewData_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="6dp"
+        android:text="View Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Salary_saveNote_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="Save Notes"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Salary_Note_EditText" />
+
+</android.support.constraint.ConstraintLayout>
